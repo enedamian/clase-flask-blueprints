@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from modelo.usuario import crear_usuario, obtener_usuario_por_id, obtener_usuarios,inicializar_usuarios
+from modelo.usuarios import crear_usuario, obtener_usuarios, obtener_usuario_por_id
 
 # Creamos el blueprint
 usuarios_bp = Blueprint('usuarios', __name__)

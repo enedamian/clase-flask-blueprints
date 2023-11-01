@@ -6,9 +6,9 @@ import csv
 import os
 
 # Variables globales que usaremos en este módulo
-usuarios = []
+usuarios = [] # Lista de usuarios
 id_usuario = 1  # Variable para asignar IDs únicos a los usuarios
-ruta_archivo_usuarios = 'modelo\\usuarios.csv'
+ruta_archivo_usuarios = 'modelo\\usuarios.csv' # Ruta del archivo CSV con datos de usuarios
 
 def inicializar_usuarios():
     """
@@ -150,3 +150,4 @@ def importar_datos_desde_csv():
     else:
         id_usuario = 1
         id_usuario=1
+
