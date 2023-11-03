@@ -8,7 +8,7 @@ import os
 # Variables globales que usaremos en este módulo
 usuarios = []
 id_usuario = 1  # Variable para asignar IDs únicos a los usuarios
-ruta_archivo_usuarios = 'modelo\\usuarios.csv'
+ruta_archivo_usuarios = 'modelos\\usuarios.csv'
 
 def inicializar_usuarios():
     """
