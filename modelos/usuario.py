@@ -149,4 +149,3 @@ def importar_datos_desde_csv():
         id_usuario= usuarios[-1]["id"]+1
     else:
         id_usuario = 1
-        id_usuario=1
