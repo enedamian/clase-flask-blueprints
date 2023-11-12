@@ -34,7 +34,7 @@ def obtener_usuario_por_id_json(id_usuario):
 @usuarios_bp.route('/usuarios/<int:id_usuario>', methods=["PUT"])
 def modificar_usuario_json(id_usuario):
     if request.is_json:
-        if "nombre_de_usuario" and "contraseña" in request.json:
+        if "nombre_de_usuario" in request.json and "contraseña" in request.json:
             usuario = request.get_json()
             usuario_modificado=editar_usuario_por_id(id_usuario,usuario["nombre_de_usuario"], usuario["contraseña"])
             return jsonify(usuario_modificado),200
