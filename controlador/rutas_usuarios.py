@@ -11,7 +11,7 @@ def obtener_usuarios_json():
 @usuarios_bp.route('/usuarios/', methods=["POST"])
 def crear_usuario_json():
     if request.is_json:
-        if "nombre_de_usuario" and "contraseña" in request.json:            
+        if "nombre_de_usuario" in request.json and "contraseña" in request.json:            
             # usuario = json.loads(request.data)
             # es lo mismo que
             usuario = request.get_json()
