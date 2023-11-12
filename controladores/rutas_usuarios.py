@@ -1,9 +1,6 @@
 from flask import Blueprint, jsonify, request
-<<<<<<<< HEAD:controladores/rutas_usuarios.py
-from modelo.usuarios import crear_usuario, obtener_usuarios, obtener_usuario_por_id
-========
 from modelos.usuario import crear_usuario, obtener_usuario_por_id, obtener_usuarios,editar_usuario_por_id, eliminar_usuario_por_id
->>>>>>>> 3d2a85a2c77c0062d937e675b4f7ca1a84f25650:controladores/rutas_usuario.py
+
 
 # Creamos el blueprint
 usuarios_bp = Blueprint('usuarios', __name__)
