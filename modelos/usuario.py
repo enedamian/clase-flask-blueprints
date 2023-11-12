@@ -8,11 +8,8 @@ import os
 # Variables globales que usaremos en este módulo
 usuarios = [] # Lista de usuarios
 id_usuario = 1  # Variable para asignar IDs únicos a los usuarios
-<<<<<<<< HEAD:modelos/usuarios.py
-ruta_archivo_usuarios = 'modelo\\usuarios.csv' # Ruta del archivo CSV con datos de usuarios
-========
 ruta_archivo_usuarios = 'modelos\\usuarios.csv'
->>>>>>>> 3d2a85a2c77c0062d937e675b4f7ca1a84f25650:modelos/usuario.py
+
 
 def inicializar_usuarios():
     """
@@ -152,10 +149,5 @@ def importar_datos_desde_csv():
     if len(usuarios)>0:
         id_usuario= usuarios[-1]["id"]+1
     else:
-<<<<<<<< HEAD:modelos/usuarios.py
         id_usuario = 1
-        id_usuario=1
 
-========
-        id_usuario = 1
->>>>>>>> 3d2a85a2c77c0062d937e675b4f7ca1a84f25650:modelos/usuario.py
